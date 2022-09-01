@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+
+
+<form>
+
+  <label for="cel">Celsius: </label>
+
+      <input [(ngModel)]="c" (ngModelChange)="ctof($event,'c')" type="number" id="cel" name="cel"><br>
+
+  <br>
+
+  <label for="fah">Fahrenheit: </label>
+
+      <input [(ngModel)]="f" (ngModelChange)="ctof($event,'f')" type="number" id="fah" name="fah">
+
+      
+
+</form>
